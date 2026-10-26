@@ -31,6 +31,10 @@ namespace LibrarySystem
             }
         }
 
-        
+        public bool IsAvailable
+        {
+            get { return IsAvailable; }
+            set { IsAvailable = value; }
+        }
     }
 }
