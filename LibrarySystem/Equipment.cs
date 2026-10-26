@@ -8,15 +8,11 @@ namespace LibrarySystem
     public class Equipment
     {
         // Private backing fields
-        private int equipmentId;
-        private string name;
-        private bool isAvailable;
-
-        // Public properties
-        public int EquipmentId
+        public int equipmentId
         {
             get { return equipmentId; }
-
+            set { equipmentId = value; }
         }
+
     }
-}
+    }
