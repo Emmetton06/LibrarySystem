@@ -36,5 +36,16 @@ namespace LibrarySystem
             get { return IsAvailable; }
             set { IsAvailable = value; }
         }
+
+        // Parameterised constructor
+        public Equipment(int equipmentId, string name, bool isAvailable)
+        {
+            // Data is securely routed through the public properties
+            this.equipmentId = equipmentId;
+            this.name = name;
+            this.IsAvailable = isAvailable;
+
+
+        }
     }
 }
