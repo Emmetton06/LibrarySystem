@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml.Linq;
 
 namespace LibrarySystem
 {
@@ -14,5 +15,22 @@ namespace LibrarySystem
             set { equipmentId = value; }
         }
 
+        public string name
+        {
+            get { return name; }
+            set
+            {
+                if (value != "")
+                {
+                    name = value;
+                }
+                else
+                {
+                    Console.WriteLine("Error: Equipment name cannot be blank.");
+                }
+            }
+        }
+
+        
     }
-    }
+}
